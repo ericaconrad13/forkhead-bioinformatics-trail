@@ -1,0 +1,9 @@
+#Configurações locais do VS Code
+.vscode/
+
+#Cache do Python
+__pycache__/
+*.pyc 
+
+#Dados baixados (podem ser baixados de novo pelos scripts)
+data/raw/
