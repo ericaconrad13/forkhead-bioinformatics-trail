@@ -23,3 +23,8 @@ analise = ProteinAnalysis(str(registro.seq))
 
 print("Massa molecular (Da):", round(analise.molecular_weight(), 1))
 print("pI:", round(analise.isoelectric_point(), 2))
+
+contagem = analise.count_amino_acids()
+mais_frequentes = sorted(contagem.items(), key=lambda par: par[1], reverse=True)[:5]
+
+print("5 resíduos mais frequentes:", mais_frequentes)
